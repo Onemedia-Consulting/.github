@@ -1,0 +1,68 @@
+name: Feature
+description: Request a new feature or enhancement
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to propose a new feature or enhancement.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What feature do you want to add and why?
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation proposal (optional)
+      description: |
+        - Proposed approach
+        - Alternatives considered
+        - Technical considerations
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: data_handling
+    attributes:
+      label: Data handling
+      description: Does this feature touch sensitive data?
+      options:
+        - label: Handles PII (personally identifiable information)
+        - label: Handles credentials, API keys, or other secrets
+        - label: Handles customer data subject to a DPA
+        - label: No sensitive data
+
+  - type: checkboxes
+    id: access_control
+    attributes:
+      label: Access control
+      description: Does this feature affect authentication, authorization, or tenant boundaries?
+      options:
+        - label: Adds new API endpoints
+        - label: Changes authentication or session logic
+        - label: Changes authorization or role permissions
+        - label: Crosses a tenant boundary
+        - label: No access-control changes
+
+  - type: checkboxes
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Does this feature add new dependencies?
+      options:
+        - label: Adds new third-party packages (PyPI / npm / etc.)
+        - label: Adds new external services or APIs
+        - label: No new dependencies
+
+  - type: textarea
+    id: other_considerations
+    attributes:
+      label: Other considerations (optional)
+      description: ADR needed? Eval impact? Customer-facing implications?
+    validations:
+      required: false

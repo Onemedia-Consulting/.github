@@ -1,0 +1,42 @@
+name: Task
+description: Track a general task, chore, or improvement
+labels: ["task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for general work that is neither a bug nor a feature request.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to be done?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Infrastructure
+        - Documentation
+        - Refactoring
+        - Dependency update
+        - Security hardening
+        - Performance
+        - Tooling / CI
+        - Other
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: security_considerations
+    attributes:
+      label: Security considerations
+      options:
+        - label: Modifies security controls or policies
+        - label: Affects access management or secrets
+        - label: Modifies authentication or authorization
+        - label: No security implications
