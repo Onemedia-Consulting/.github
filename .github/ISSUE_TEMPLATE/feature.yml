@@ -7,13 +7,37 @@ body:
       value: |
         Use this template to propose a new feature or enhancement.
 
+        **No issue is "ready" without acceptance criteria.** Write them as checkable statements —
+        observable, atomic, and free of imposed solution (the *what*, not the *how*).
+
   - type: textarea
-    id: description
+    id: context
     attributes:
-      label: Description
-      description: What feature do you want to add and why?
+      label: Context
+      description: Why this exists. The problem, not the solution.
     validations:
       required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: |
+        Checkable statements. Each observable, atomic, unambiguous. The reviewer agent and the human
+        grade the PR against these — they are the spec, the contract, and the rubric.
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: What this explicitly does NOT cover (prevents scope creep).
+    validations:
+      required: false
 
   - type: textarea
     id: implementation

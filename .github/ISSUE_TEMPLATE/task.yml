@@ -7,6 +7,8 @@ body:
       value: |
         Use this template for general work that is neither a bug nor a feature request.
 
+        **No task is "ready" without acceptance criteria** — even chores get checkable done-conditions.
+
   - type: textarea
     id: description
     attributes:
@@ -14,6 +16,25 @@ body:
       description: What needs to be done?
     validations:
       required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Checkable, observable done-conditions. How do we know this task is complete?
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: What this explicitly does NOT cover.
+    validations:
+      required: false
 
   - type: dropdown
     id: category

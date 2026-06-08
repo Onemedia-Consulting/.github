@@ -6,6 +6,17 @@
 
 <!-- Closes #N. If this is a one-off without an issue, briefly explain why. -->
 
+## Acceptance criteria check
+
+<!-- Copy the linked issue's acceptance criteria and check what this PR satisfies. -->
+<!-- The reviewer agent and the human grade this PR against these first. -->
+
+- [ ] 
+
+## Scope confirmation
+
+- [ ] This PR does only what the linked issue asked (no scope creep)
+
 ## Changes
 
 <!-- Bullet list of the substantive changes. Skip mechanical edits. -->
