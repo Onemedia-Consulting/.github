@@ -32,6 +32,28 @@ body:
     validations:
       required: false
 
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria (definition of done)
+      description: |
+        Checkable conditions for the fix. For bugs the AC is the fix being correct and guarded
+        against regression — not just "works now".
+      placeholder: |
+        - [ ] Root cause identified (not just the symptom patched)
+        - [ ] Regression test added that fails before the fix and passes after
+        - [ ] Expected behavior above is observed
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: Related issues this fix explicitly does NOT address.
+    validations:
+      required: false
+
   - type: dropdown
     id: severity
     attributes:

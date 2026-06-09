@@ -7,7 +7,8 @@ body:
       value: |
         Use this template for general work that is neither a bug nor a feature request.
 
-        **No task is "ready" without acceptance criteria** — even chores get checkable done-conditions.
+        Even chores get checkable done-conditions. (Required fields are enforced by GitHub on public
+        repos; on private repos this guides but does not hard-block — enforcement tracked separately.)
 
   - type: textarea
     id: description
@@ -22,9 +23,9 @@ body:
     attributes:
       label: Acceptance Criteria
       description: Checkable, observable done-conditions. How do we know this task is complete?
-      value: |
-        - [ ] 
-        - [ ] 
+      placeholder: |
+        - [ ] Config migrated and the old path removed
+        - [ ] CI green on the new workflow
     validations:
       required: true
 

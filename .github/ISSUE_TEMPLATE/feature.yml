@@ -7,8 +7,10 @@ body:
       value: |
         Use this template to propose a new feature or enhancement.
 
-        **No issue is "ready" without acceptance criteria.** Write them as checkable statements —
-        observable, atomic, and free of imposed solution (the *what*, not the *how*).
+        **Write acceptance criteria as checkable statements** — observable, atomic, and free of
+        imposed solution (the *what*, not the *how*). Our convention: no issue is "ready" without
+        acceptance criteria. (On public repos GitHub enforces the required fields below; on private
+        repos this template guides but does not hard-block — enforcement there is tracked separately.)
 
   - type: textarea
     id: context
@@ -23,11 +25,11 @@ body:
     attributes:
       label: Acceptance Criteria
       description: |
-        Checkable statements. Each observable, atomic, unambiguous. The reviewer agent and the human
-        grade the PR against these — they are the spec, the contract, and the rubric.
-      value: |
-        - [ ] 
-        - [ ] 
+        Checkable statements. Each observable, atomic, unambiguous. The reviewer and the human grade
+        the PR against these — they are the spec, the contract, and the rubric.
+      placeholder: |
+        - [ ] Failed login shows an inline error within 200ms without a page reload
+        - [ ] After 5 failed attempts the account is rate-limited for 15 min
     validations:
       required: true
 

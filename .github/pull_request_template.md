@@ -11,7 +11,7 @@
 <!-- Copy the linked issue's acceptance criteria and check what this PR satisfies. -->
 <!-- The reviewer agent and the human grade this PR against these first. -->
 
-- [ ] 
+- [ ] <!-- paste each AC here and check what this PR satisfies -->
 
 ## Scope confirmation
 
