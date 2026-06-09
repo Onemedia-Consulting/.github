@@ -7,6 +7,9 @@ body:
       value: |
         Use this template for general work that is neither a bug nor a feature request.
 
+        Even chores get checkable done-conditions. (Required fields are enforced by GitHub on public
+        repos; on private repos this guides but does not hard-block — enforcement tracked separately.)
+
   - type: textarea
     id: description
     attributes:
@@ -14,6 +17,25 @@ body:
       description: What needs to be done?
     validations:
       required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Checkable, observable done-conditions. How do we know this task is complete?
+      placeholder: |
+        - [ ] Config migrated and the old path removed
+        - [ ] CI green on the new workflow
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: What this explicitly does NOT cover.
+    validations:
+      required: false
 
   - type: dropdown
     id: category
