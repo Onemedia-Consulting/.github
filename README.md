@@ -16,7 +16,7 @@ When a repo in `Onemedia-Consulting` does not contain its own version of one of 
 
 ## How OMC uses this
 
-The intent is consistency across all OMC repositories without per-repo copy-paste. New repos start with sensible templates the moment they are created. Existing OMC repos (`OMC_SSFS`, `data-cleaner`, `Marketo-API`, `poc-marketo-agent`) gain these defaults passively — no code change required.
+The intent is consistency across all OMC repositories without per-repo copy-paste. New repos start with sensible templates the moment they are created. Existing OMC repos (`OMC_SSFS`, `data-cleaner`, `Marketo-API`, `agent-harness`) gain these defaults passively — no code change required.
 
 ## Related
 
